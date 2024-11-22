@@ -1,7 +1,5 @@
 package com.example.samojlov_av_homework_module_16_number_1__1_koala
 
-import android.Manifest
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -10,7 +8,6 @@ import android.widget.MediaController
 import android.widget.Toast
 import android.widget.VideoView
 import androidx.activity.enableEdgeToEdge
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -47,22 +44,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         init()
-        initPermission()
     }
-
-
-    @SuppressLint("InlinedApi")
-    private fun initPermission() {
-        val permission = arrayOf(
-            Manifest.permission.READ_MEDIA_VIDEO,
-            Manifest.permission.READ_EXTERNAL_STORAGE
-        )
-        permissionLauncher.launch(permission)
-    }
-
-    private val permissionLauncher = registerForActivityResult(
-        ActivityResultContracts.RequestMultiplePermissions()
-    ) { }
 
     private fun init() {
         videoViewVW = binding.videoViewVW
