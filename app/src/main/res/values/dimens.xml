@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--TODO: Overall dimensions-->
+    <dimen name="layout_width">0dp</dimen>
+    <dimen name="minHeight">48dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <!--TODO: CardView-->
+    <dimen name="margin_CardVieW">8dp</dimen>
+    <dimen name="cardCornerRadius">6dp</dimen>
+    <dimen name="cardElevation">6dp</dimen>
+    <!--TODO: Main Activity-->
+    <dimen name="margin_player_elements">15dp</dimen>
+    <dimen name="margin_button_player">10dp</dimen>
+    <dimen name="margin_image_player">2dp</dimen>
+    <dimen name="width_player">300dp</dimen>
+    <dimen name="margin_floatingActionButton_Start_Top">30dp</dimen>
+
+
+</resources>
